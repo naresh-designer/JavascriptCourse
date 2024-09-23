@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <script type="text/javascript">
+
+  	//var mp = [30,5,7,8];
+
+    var mp = [
+      {fname : 'Naresh', lname : 'Kumar'},
+      {fname : 'Ramesh', lname : 'Kumar'},
+      {fname : 'Suresh', lname : 'Kumar'}
+    ]
+
+    //document.write(mp + "<br><br>");
+
+    var b = mp.map(test);
+
+    document.write(b);
+
+    function test(rt){
+      return rt.fname + " " + rt.lname;
+    }
+
+
+
+  </script>
+
+  </head>
+
+  <body>
+
+  </body>
+  </html>

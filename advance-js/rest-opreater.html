@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <script type="text/javascript">
+  	
+    function sum(name, ...argu) {
+
+      var sum = 10;
+
+      for (var i in argu){
+        sum += argu[i];
+      }
+      document.write(`${name} : `)
+      document.write(`${sum} <br>`);
+    }
+
+    sum("Naresh",20,30,40,50);
+    sum(20,30,40,50,100);
+    sum(20,30,40,50,150,200);
+
+  </script>
+
+  </head>
+
+  <body>
+
+  </body>
+  </html>

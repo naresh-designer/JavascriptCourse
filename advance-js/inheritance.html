@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <script type="text/javascript">
+
+    class emplayee{
+      constructor(name, age, salery){
+        this.name = name;
+        this.age = age;
+        this.salery = salery;
+      }
+
+      info(){
+        document.write(`Emplayee Name : ${this.name} <br> Emplayee Age : ${this.age} <br> Emplayee Salery : ${this.salery} <br>`);
+      }
+      
+    }
+
+    class manager extends emplayee{
+
+      info(){
+        super.info();
+        var ta = 3000;
+        var mb = 500;
+        var totalamt = this.salery + ta + mb;
+        document.write(`Emplayee Name : ${this.name} <br> Emplayee Age : ${this.age} <br> Emplayee Salery : ${totalamt} <br>`);
+      }
+    }
+
+    var a = new manager("Naresh", 33, 80000);
+    var b = new emplayee("Ramesh", 35, 50000);
+    a.info();
+    b.info();
+
+  </script>
+
+  </head>
+
+  <body>
+
+    
+
+  </body>
+  </html>

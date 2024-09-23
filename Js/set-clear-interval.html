@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <style type="text/css">
+    #test{
+      width: 200px;
+      height: 200px;
+      background-color: black;
+      transition: .5s all;
+    }
+  </style>
+
+  </head>
+
+  <body>
+    <div id="test"></div>
+
+
+    <script type="text/javascript">
+
+      var a = 0;
+      var id = setInterval(Anim,1000);
+
+      function Anim(){
+
+        a = a + 10;
+
+        if(a == 100){
+          clearInterval(id);
+        }else{
+          var target = document.getElementById('test');
+        target.style.width = a + "px";
+        target.style.height = a + "px";
+        target.style.backgroundColor = "red";
+        }
+        
+      }
+    </script>
+  </body>
+  </html>
